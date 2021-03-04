@@ -9,11 +9,11 @@
 	"requireArtifactBuild": false,
 	"features": [
 		{
-			"name": "Location Page",
-			"streamLabel": "account-3356190/locations",
+			"name": "Product Page",
+			"streamLabel": "account-3434922/products",
 			"goTemplateEntityPageSet": {
-				"template": "location.source",
-				"urlTemplate": "location.url"
+				"template": "product.source",
+				"urlTemplate": "product.url"
 			}
 		}
 			
