@@ -15,15 +15,8 @@
 				"template": "location.source",
 				"urlTemplate": "location.url"
 			}
-		},
-		{
-			"name": "Product Page",
-			"streamLabel": "account-3434922/products",
-			"goTemplateEntityPageSet": {
-				"template": "product.source",
-				"urlTemplate": "product.url"
-			}
-		}		
+		}
+			
 	],
 	"ci_config": {
 		"output_directories": ["templates", "desktop"],
