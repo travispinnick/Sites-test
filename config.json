@@ -10,7 +10,7 @@
 	"features": [
 		{
 			"name": "Location Page",
-			"streamLabel": "account-3434922/locations",
+			"streamLabel": "account-3356190/locations",
 			"goTemplateEntityPageSet": {
 				"template": "location.source",
 				"urlTemplate": "location.url"
