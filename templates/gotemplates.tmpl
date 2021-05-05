@@ -1,10 +1,9 @@
+---
+streamId: "account-3434922/products"
+urlFormat: "{{ .externalEntityId }}.html"
+---
 
-{{define "product.url" -}}
-{{.externalEntityId}}.html
-{{- end}}
-
-
-{{define "product.source" -}}
+{{define "gotemplates.tmpl" -}}
 <html>
     <body>
         <h1>{{.name}}</h1>
@@ -17,4 +16,3 @@
     </body>
 </html>
 {{end}}
-
