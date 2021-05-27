@@ -1,0 +1,21 @@
+{
+	"features": [
+		{
+			"name": "Home Page",
+			"streamId": "sites-index",
+			"handlebarsTemplateEntityPageSet": {
+				"htmlTemplate": "index",
+				"urlTemplate": "url"
+			}
+		},
+		{
+			"name": "Locations",
+			"streamId": "sites-locations",
+			"handlebarsTemplateEntityPageSet": {
+				"htmlTemplate": "location",
+				"urlTemplate": "url"
+			}
+		}
+		
+    ]
+}
