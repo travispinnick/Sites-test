@@ -1,0 +1,25 @@
+---
+{
+    "streamId": "pages-location-stream",
+    "urlFormat": "{{.c_slug}}"
+}
+---
+
+{{define "product.tmpl" -}}
+<html>
+    <body>
+        <h1> Welcome to - {{.name}}</h1>
+        <p>Address: 
+            {{ range $key, $value := .address }}
+              <li><strong>{{ $key }}</strong>: {{ $value }}</li>
+            {{ end }}
+        </p>
+
+        <p>Hours: 
+            {{ range $key, $value := .hours }}
+              <li><strong>{{ $key }}</strong>: {{ $value }}</li>
+          {{ end }}
+        </p>
+    </body>
+</html>
+{{end}}
