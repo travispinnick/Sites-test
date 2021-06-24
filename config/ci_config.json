@@ -11,7 +11,7 @@
                 "pattern": "*.hbs"
              },
             { 
-                "root": "pages",
+                "root": "desktop",
                 "pattern": "*.hbs"
             } 
         ]
