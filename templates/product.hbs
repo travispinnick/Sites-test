@@ -1,0 +1,66 @@
+
+---
+{
+    "stream": {
+        "$id": "products",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+      "fields": [
+        "id",
+        "uid",
+        "richTextDescription",
+        "name",
+        "slug",
+        "price",
+        "color",
+        "brand",
+        "photoGallery"
+      ],
+      "filter": {
+        "entityTypes": [
+          "product"
+        ]
+      }
+    },
+    "urlFormat": "{{slug}}"
+}
+---
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{name}}</title>
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+</head>
+
+    <body>
+        
+    <div class="grid grid-cols-2 divide-x gap-3 pl-10">
+
+        <div class="col-span-1">
+            <div class="container py-8 px-6 mx-auto">
+                <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
+                    {{name}} 
+                </div>
+                <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-600 text-3xl mb-8">
+                    {{brand}} 
+                </div>
+                <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-400 text-3xl mb-8">
+                    ${{price.value}} 
+                </div>
+                <p class="mt-8 mb-8 text-xl">{{richTextDescription}}</p>
+            </div>
+
+        </div>
+    </div>
+
+    </body> 
+
+{{>footer}}
+
+</html>
