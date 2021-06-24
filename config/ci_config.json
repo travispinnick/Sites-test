@@ -9,15 +9,7 @@
             { 
                 "root": "templates",
                 "pattern": "*.hbs"
-            },
-            { 
-                "root": "partials",
-                "pattern": "*.hbs"
-            },
-            { 
-                "root": "pages",
-                "pattern": "*.hbs"
-            } 
+            }
         ]
     },
     "dependencies": {
