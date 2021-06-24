@@ -2,13 +2,22 @@
     "artifactStructure": {
         "assets": [
             {
-                "root": "desktop"
+                "root": "assets"
             }
         ],
-        "goTemplates": [
-            {
-                "root": "templates"
-            }
+        "hbsTemplates": [
+            { 
+                "root": "templates",
+                "pattern": "*.hbs"
+            },
+            { 
+                "root": "partials",
+                "pattern": "*.hbs"
+            },
+            { 
+                "root": "pages",
+                "pattern": "*.hbs"
+            } 
         ]
     },
     "dependencies": {
@@ -16,8 +25,8 @@
         "requiredFiles": []
     },
     "buildArtifacts": {
-        "build_setup_cmd": "echo setup",
-        "build_cmd": "echo hello"
+        "build_setup_cmd": "npm install",
+        "build_cmd": "npm run build"
     },
     "livePreview": {
         "serve_setup_cmd": "echo setup",
