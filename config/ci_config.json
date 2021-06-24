@@ -9,7 +9,11 @@
             { 
                 "root": "templates",
                 "pattern": "*.hbs"
-            }
+             },
+            { 
+                "root": "pages",
+                "pattern": "*.hbs"
+            } 
         ]
     },
     "dependencies": {
