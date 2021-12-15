@@ -49,12 +49,12 @@
         <div class="col-span-1">
             <div class="w-full md:w-full lg:scale-80 p-6 flex flex-col space-y-6">
                 {{#each photoGallery}}
-            {{#if @first}}
-                <a href={{this.image.url}}>
-                    <img class="hover:grow hover:shadow-lg" src={{this.image.url}} width="300">
-                </a>
-            {{/if}}
-{{/each}}
+                    {{#if @first}}
+                        <a href={{this.image.url}}>
+                            <img class="hover:grow hover:shadow-lg" src={{this.image.url}} width="300">
+                        </a>
+                    {{/if}}
+                {{/each}}
             </div>
         </div>
 
